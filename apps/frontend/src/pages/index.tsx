@@ -1,12 +1,15 @@
+import Template from '@/components/template';
 import Head from 'next/head';
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>I2P</title>
       </Head>
-      <main />
+      <main style={{ overflow: 'hidden' }}>
+        <Template />
+      </main>
     </>
   );
 }
