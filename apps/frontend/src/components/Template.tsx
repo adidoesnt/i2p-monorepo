@@ -1,5 +1,5 @@
 import { Grid, GridItem, GridProps } from '@chakra-ui/react';
-import Header from './header';
+import Header from './Header';
 import Footer from './Footer';
 import { createContext, useContext } from 'react';
 import { useSessionStorage } from 'usehooks-ts';
@@ -55,7 +55,8 @@ export function TemplateContent({ children }: TemplateProps) {
       bgColor={bgColor}
       textColor={textColor}
       transitionDuration={'200ms'}
-      overflow={'none'}>
+      overflow={'none'}
+    >
       <GridItem w={'100vw'} h={'auto'}>
         <Header toggleDarkMode={toggleDarkMode} currentTheme={currentTheme} />
       </GridItem>

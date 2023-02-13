@@ -9,9 +9,9 @@
     "lint:fix": "eslint --fix",
     "build": "yarn && tsc",
     "dev:ts": "yarn && tsc -w",
-    "dev:js": "nodemon --experimental-modules --es-module-specifier-resolution=node ../../dist/backend/src/index.js",
+    "dev:js": "nodemon --experimental-modules --es-module-specifier-resolution=node ../backend/dist/index.js",
     "dev": "concurrently npm:dev:*",
-    "start": "npm run build && node --experimental-modules --es-module-specifier-resolution=node ../../dist/backend/src/index.js"
+    "start": "npm run build && node --experimental-modules --es-module-specifier-resolution=node ../backend/dist/index.js"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^13.1.6",

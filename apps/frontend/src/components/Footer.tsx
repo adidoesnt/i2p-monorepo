@@ -8,7 +8,8 @@ export default function Footer() {
         href={
           'https://enterprise.nus.edu.sg/supporting-entrepreneurs/societal-impact-initiatives/nus-i2p'
         }
-        target={'_blank'}>
+        target={'_blank'}
+      >
         More information
       </Link>
     </Flex>

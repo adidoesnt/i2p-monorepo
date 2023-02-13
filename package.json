@@ -8,7 +8,7 @@
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint --fix",
-    "format": "prettier --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\" --config ./.prettierrc",
+    "format": "yarn && nx run-many --target=lint",
     "prepare": "husky install",
     "build": "yarn && nx run-many --target=build",
     "start": "yarn build && nx run-many --target=start --maxParallel=2",
