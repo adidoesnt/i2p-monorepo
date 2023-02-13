@@ -25,7 +25,7 @@ export default function NavBar({ pages, toggleDarkMode, currentTheme }: NavBarPr
           {page.name}
         </Link>
       ))}
-      <Switch defaultChecked={currentTheme} colorScheme={'brand'} onChange={toggleDarkMode} />
+      <Switch defaultChecked={currentTheme} colorScheme={'teal'} onChange={toggleDarkMode} />
     </Flex>
   );
 }

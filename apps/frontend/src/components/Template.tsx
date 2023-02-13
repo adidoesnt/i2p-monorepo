@@ -42,20 +42,22 @@ export default function Template({ children }: TemplateProps) {
 
 export function TemplateContent({ children }: TemplateProps) {
   const { currentTheme, toggleDarkMode } = useTheme();
-  const bgColor = currentTheme ? 'brand.900' : 'brand.50';
-  const textColor = currentTheme ? 'brand.50' : 'brand.900';
+  const bgGradient = currentTheme
+    ? 'linear(to-r, green.900, cyan.900)'
+    : 'linear(to-r, cyan.100, green.100)';
+  const textColor = currentTheme ? 'green.50' : 'green.900';
 
   return (
     <Grid
-      gridTemplateRows={'200px 1fr 200px'}
+      gridTemplateRows={'100px 1fr 100px'}
       w={'100vw'}
       h={'100vh'}
       justifyContent={'center'}
       alignItems={'center'}
-      bgColor={bgColor}
+      bgGradient={bgGradient}
       textColor={textColor}
       transitionDuration={'200ms'}
-      overflow={'none'}
+      overflow={'auto'}
     >
       <GridItem w={'100vw'} h={'auto'}>
         <Header toggleDarkMode={toggleDarkMode} currentTheme={currentTheme} />
