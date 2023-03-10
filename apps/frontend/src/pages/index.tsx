@@ -13,7 +13,7 @@ export function Content() {
       <CenteredGridItem>
         <Map />
       </CenteredGridItem>
-      <CenteredGridItem>
+      <CenteredGridItem display={'flex'}>
         <Flex flexDir={'column'} justifyContent={'center'} alignItems={'center'} m={50}>
           <Heading textAlign={'center'}>Innovation for Impact Pledge</Heading>
           <Text p={10} fontSize={20}>

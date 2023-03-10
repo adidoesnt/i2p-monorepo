@@ -10,7 +10,7 @@ export type HeaderProps = {
 
 export default function Header({ toggleDarkMode, currentTheme }: HeaderProps) {
   return (
-    <Flex justifyContent={'space-around'}>
+    <Flex justifyContent={'space-around'} alignItems={'center'}>
       <Link href={'/'}>
         <Heading>Innovation for Impact Pledge</Heading>
       </Link>

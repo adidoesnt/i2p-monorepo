@@ -49,7 +49,7 @@ export function TemplateContent({ children }: TemplateProps) {
 
   return (
     <Grid
-      gridTemplateRows={'100px 1fr 100px'}
+      gridTemplateRows={'200px 1fr 100px'}
       w={'100vw'}
       h={'100vh'}
       justifyContent={'center'}
@@ -57,7 +57,8 @@ export function TemplateContent({ children }: TemplateProps) {
       bgGradient={bgGradient}
       textColor={textColor}
       transitionDuration={'200ms'}
-      overflow={'auto'}
+      overflowY={'auto'}
+      overflowX={'hidden'}
     >
       <GridItem w={'100vw'} h={'auto'}>
         <Header toggleDarkMode={toggleDarkMode} currentTheme={currentTheme} />
